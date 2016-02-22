@@ -17,7 +17,10 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
-    <style name="translante_theme" parent="@android:style/Theme.Translucent">
+     <style name="translante_theme" parent="@android:style/Theme.Translucent">
        <item name="@android:windowNoTitle">true</item>
-    </style>
+    </style> 
+    <!-- <style name="translante_theme" parent="@android:style/Theme.Dialog">
+       <item name="@android:windowNoTitle">true</item>
+    </style>  -->
 </resources>
