@@ -18,7 +18,7 @@
     </style>
 
      <style name="translante_theme" parent="@android:style/Theme.Translucent">
-       <item name="@android:windowNoTitle">true</item>
+       <item name="@android:windowNoTitle">false</item>
     </style> 
     <!-- <style name="translante_theme" parent="@android:style/Theme.Dialog">
        <item name="@android:windowNoTitle">true</item>
