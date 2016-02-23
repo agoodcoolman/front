@@ -1,7 +1,10 @@
 package com.example.front;
 
+import com.example.front.service.MyService;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.view.Display;
@@ -60,12 +63,14 @@ public class MainActivity extends Activity {
 
 		// 显示myFloatView图像
 		m.addView(bit, p);
+		
+		startService(new Intent(this.getApplicationContext(), MyService.class));
 	}
 
-	@Override
+	/*@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		// 所有事件不处理.
 		return true;
-	}
+	}*/
 
 }

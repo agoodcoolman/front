@@ -16,13 +16,17 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/translante_theme"  >
+            android:theme="@style/translante_theme" 
+            android:process="com.example.front" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 这里的配置之后就可以在应用程序管理器中，运行中显示了 -->
+        <service android:name="com.example.front.service.MyService"
+            android:process=":remote"></service>
     </application>
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 </manifest>
